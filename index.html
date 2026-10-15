@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive full-width website template">
+  <meta name="theme-color" content="#111827">
+  <title>My Website</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #111827;
+      --muted: #64748b;
+      --accent: #d97706;
+      --accent-dark: #92400e;
+      --border: #e2e8f0;
+      --content-width: 1200px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; width: 100%; }
+    body {
+      margin: 0;
+      width: 100%;
+      min-width: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      overflow-wrap: anywhere;
+    }
+    img, video, iframe, svg { max-width: 100%; }
+    img { height: auto; }
+    a { color: inherit; }
+    .site-header {
+      width: 100%;
+      background: #111827;
+      color: white;
+    }
+    .header-inner {
+      width: min(100%, var(--content-width));
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand { margin: 0; font-size: clamp(1.2rem, 2.6vw, 1.8rem); line-height: 1.2; }
+    .brand a { text-decoration: none; }
+    .nav { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; }
+    .nav a { text-decoration: none; color: #f8fafc; font-size: .95rem; }
+    .nav a:hover { color: #fbbf24; }
+    .hero {
+      width: 100%;
+      min-height: 300px;
+      display: grid;
+      place-items: center;
+      padding: clamp(36px, 7vw, 84px) 20px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #111827, #374151 60%, #92400e);
+    }
+    .hero-inner { width: min(100%, 900px); }
+    .hero h2 { margin: 0 0 12px; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.12; }
+    .hero p { margin: 0 auto 22px; max-width: 680px; color: #e5e7eb; font-size: clamp(1rem, 2vw, 1.2rem); }
+    .button {
+      display: inline-block; padding: 11px 18px; border-radius: 8px;
+      background: var(--accent); color: #fff; text-decoration: none; font-weight: 700;
+    }
+    .button:hover { background: var(--accent-dark); }
+    main { width: 100%; }
+    .section {
+      width: min(100%, var(--content-width));
+      margin: 0 auto;
+      padding: clamp(28px, 5vw, 56px) 20px;
+    }
+    .section h2 { margin: 0 0 12px; font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.25; }
+    .section-intro { margin: 0 0 24px; color: var(--muted); max-width: 760px; }
+    .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .card {
+      min-width: 0; padding: 22px; border: 1px solid var(--border);
+      border-radius: 14px; background: var(--surface);
+    }
+    .card h3 { margin: 0 0 8px; font-size: 1.15rem; }
+    .card p { margin: 0; color: var(--muted); }
+    .about { background: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .contact-box { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
+    .site-footer { width: 100%; background: #111827; color: #e5e7eb; }
+    .footer-inner {
+      width: min(100%, var(--content-width)); margin: 0 auto;
+      padding: 24px 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px;
+    }
+    .footer-inner p { margin: 0; }
+    @media (max-width: 760px) {
+      .header-inner { align-items: flex-start; flex-direction: column; padding: 14px 16px; }
+      .nav { width: 100%; gap: 10px 16px; }
+      .nav a { font-size: .92rem; }
+      .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .section { padding-left: 16px; padding-right: 16px; }
+      .hero { min-height: 260px; }
+    }
+    @media (max-width: 480px) {
+      .cards { grid-template-columns: minmax(0, 1fr); }
+      .card { padding: 18px; }
+      .hero { padding-left: 16px; padding-right: 16px; }
+      .footer-inner { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="brand"><a href="#">My Website</a></h1>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <h2>Welcome to My Website</h2>
+        <p>A clean, full-width and mobile-responsive website template. Replace this text with your own business details.</p>
+        <a class="button" href="#contact">Contact Us</a>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <h2>Our Services</h2>
+      <p class="section-intro">Add your services here. The layout adjusts automatically for mobile, tablet and desktop screens.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Service One</h3>
+          <p>Write a short description of your first service here.</p>
+        </article>
+        <article class="card">
+          <h3>Service Two</h3>
+          <p>Write a short description of your second service here.</p>
+        </article>
+        <article class="card">
+          <h3>Service Three</h3>
+          <p>Write a short description of your third service here.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section">
+        <h2>About Us</h2>
+        <p class="section-intro">Add your business introduction here. Keep your content, images and links relevant to your website.</p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="contact-box">
+        <div>
+          <h2>Contact Us</h2>
+          <p class="section-intro">Add your phone number, email address or contact link here.</p>
+        </div>
+        <a class="button" href="mailto:hello@example.com">Email Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> My Website. All rights reserved.</p>
+      <p><a href="#about">About Us</a> · <a href="#contact">Contact</a></p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
