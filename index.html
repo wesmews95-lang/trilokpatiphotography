@@ -1,178 +1,1248 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Responsive full-width website template">
-  <meta name="theme-color" content="#111827">
-  <title>My Website</title>
-  <style>
-    :root {
-      --bg: #f8fafc;
-      --surface: #ffffff;
-      --text: #111827;
-      --muted: #64748b;
-      --accent: #d97706;
-      --accent-dark: #92400e;
-      --border: #e2e8f0;
-      --content-width: 1200px;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; width: 100%; }
-    body {
-      margin: 0;
-      width: 100%;
-      min-width: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.6;
-      overflow-wrap: anywhere;
-    }
-    img, video, iframe, svg { max-width: 100%; }
-    img { height: auto; }
-    a { color: inherit; }
-    .site-header {
-      width: 100%;
-      background: #111827;
-      color: white;
-    }
-    .header-inner {
-      width: min(100%, var(--content-width));
-      margin: 0 auto;
-      padding: 14px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-    .brand { margin: 0; font-size: clamp(1.2rem, 2.6vw, 1.8rem); line-height: 1.2; }
-    .brand a { text-decoration: none; }
-    .nav { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; }
-    .nav a { text-decoration: none; color: #f8fafc; font-size: .95rem; }
-    .nav a:hover { color: #fbbf24; }
-    .hero {
-      width: 100%;
-      min-height: 300px;
-      display: grid;
-      place-items: center;
-      padding: clamp(36px, 7vw, 84px) 20px;
-      text-align: center;
-      color: white;
-      background: linear-gradient(135deg, #111827, #374151 60%, #92400e);
-    }
-    .hero-inner { width: min(100%, 900px); }
-    .hero h2 { margin: 0 0 12px; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.12; }
-    .hero p { margin: 0 auto 22px; max-width: 680px; color: #e5e7eb; font-size: clamp(1rem, 2vw, 1.2rem); }
-    .button {
-      display: inline-block; padding: 11px 18px; border-radius: 8px;
-      background: var(--accent); color: #fff; text-decoration: none; font-weight: 700;
-    }
-    .button:hover { background: var(--accent-dark); }
-    main { width: 100%; }
-    .section {
-      width: min(100%, var(--content-width));
-      margin: 0 auto;
-      padding: clamp(28px, 5vw, 56px) 20px;
-    }
-    .section h2 { margin: 0 0 12px; font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.25; }
-    .section-intro { margin: 0 0 24px; color: var(--muted); max-width: 760px; }
-    .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-    .card {
-      min-width: 0; padding: 22px; border: 1px solid var(--border);
-      border-radius: 14px; background: var(--surface);
-    }
-    .card h3 { margin: 0 0 8px; font-size: 1.15rem; }
-    .card p { margin: 0; color: var(--muted); }
-    .about { background: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .contact-box { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
-    .site-footer { width: 100%; background: #111827; color: #e5e7eb; }
-    .footer-inner {
-      width: min(100%, var(--content-width)); margin: 0 auto;
-      padding: 24px 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px;
-    }
-    .footer-inner p { margin: 0; }
-    @media (max-width: 760px) {
-      .header-inner { align-items: flex-start; flex-direction: column; padding: 14px 16px; }
-      .nav { width: 100%; gap: 10px 16px; }
-      .nav a { font-size: .92rem; }
-      .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .section { padding-left: 16px; padding-right: 16px; }
-      .hero { min-height: 260px; }
-    }
-    @media (max-width: 480px) {
-      .cards { grid-template-columns: minmax(0, 1fr); }
-      .card { padding: 18px; }
-      .hero { padding-left: 16px; padding-right: 16px; }
-      .footer-inner { flex-direction: column; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111111">
+
+<title>Trilokpati Photography | Professional Photography in Mumbai</title>
+
+<meta name="description" content="Explore photography services by Trilokpati Photography in Mumbai, Maharashtra. Contact us for wedding photography, pre-wedding shoots, portraits, events and commercial photography inquiries.">
+
+<meta name="robots" content="index, follow">
+<meta name="author" content="Trilokpati Photography">
+
+<link rel="canonical" href="https://www.yourdomain.com/">
+
+<style>
+:root {
+  --black: #111111;
+  --dark: #191919;
+  --gold: #d6b36a;
+  --light-gold: #f0d99e;
+  --white: #ffffff;
+  --muted: #bdbdbd;
+  --section: #f7f5f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  color: #252525;
+  background: var(--white);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible, a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+}
+
+.container {
+  width: min(1120px, 90%);
+  margin: auto;
+}
+
+header {
+  background: var(--black);
+  color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #393226;
+}
+
+.navbar {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  color: var(--gold);
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  display: block;
+  color: white;
+  font-size: 10px;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #eeeeee;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  color: white;
+  border: 1px solid #6c6049;
+  padding: 8px 12px;
+  font-size: 23px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero {
+  background:
+    radial-gradient(ellipse at 80% 25%, #40341f 0%, transparent 35%),
+    linear-gradient(135deg, #101010, #211c14 60%, #111111);
+  color: white;
+  padding: 105px 0 100px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--gold);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  max-width: 850px;
+  margin: 22px auto;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(38px, 6vw, 68px);
+  line-height: 1.13;
+  font-weight: 500;
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 0 auto 30px;
+  color: #dddddd;
+  font-size: 17px;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #20a75a;
+  color: #ffffff;
+  padding: 14px 25px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background .2s ease;
+}
+
+.whatsapp-btn:hover {
+  background: #168846;
+}
+
+.whatsapp-btn svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.hero-note {
+  font-size: 12px !important;
+  color: #bdbdbd !important;
+  margin-top: 17px !important;
+  margin-bottom: 0 !important;
+}
+
+section {
+  padding: 76px 0;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 42px;
+}
+
+.section-heading .eyebrow {
+  color: #92712e;
+}
+
+.section-heading h2 {
+  margin-top: 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 4vw, 43px);
+  line-height: 1.2;
+  color: #191919;
+}
+
+.section-heading p {
+  color: #666666;
+  margin-top: 14px;
+}
+
+.about {
+  background: var(--section);
+}
+
+.about-content {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-content p {
+  margin: 16px 0;
+  color: #555555;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background: #ffffff;
+  border: 1px solid #e8e2d6;
+  border-radius: 9px;
+  padding: 28px 24px;
+  transition: transform .2s ease, border-color .2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold);
+}
+
+.service-number {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  color: #b28b43;
+}
+
+.service-card h3 {
+  font-size: 19px;
+  margin: 10px 0;
+  color: #1a1a1a;
+}
+
+.service-card p {
+  color: #666666;
+  font-size: 14px;
+}
+
+.process {
+  background: var(--black);
+  color: white;
+}
+
+.process .section-heading h2 {
+  color: white;
+}
+
+.process .section-heading p {
+  color: #c5c5c5;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.process-card {
+  border-top: 2px solid var(--gold);
+  padding: 24px 10px 10px;
+}
+
+.process-card h3 {
+  color: var(--light-gold);
+  margin-bottom: 8px;
+}
+
+.process-card p {
+  color: #c9c9c9;
+  font-size: 14px;
+}
+
+.contact {
+  background: var(--section);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: stretch;
+}
+
+.contact-card {
+  background: white;
+  border: 1px solid #e6e0d4;
+  border-radius: 9px;
+  padding: 30px;
+}
+
+.contact-card h3 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #eeeeee;
+  overflow-wrap: anywhere;
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-item strong {
+  display: block;
+  font-size: 13px;
+  color: #8b6b2f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-item a,
+.contact-item p {
+  font-size: 15px;
+  color: #333333;
+}
+
+.contact-actions {
+  margin-top: 24px;
+}
+
+.map-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #76591e;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal {
+  background: #ffffff;
+}
+
+.legal-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.legal-block {
+  padding: 25px 0;
+  border-bottom: 1px solid #e8e8e8;
+  scroll-margin-top: 95px;
+}
+
+.legal-block h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+  color: #262626;
+}
+
+.legal-block p,
+.legal-block li {
+  color: #5a5a5a;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.legal-block ul {
+  padding-left: 22px;
+}
+
+footer {
+  background: #111111;
+  color: white;
+  padding: 45px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-brand {
+  color: var(--gold);
+  font-size: 21px;
+  font-weight: bold;
+}
+
+footer h3 {
+  font-size: 16px;
+  margin-bottom: 13px;
+  color: var(--light-gold);
+}
+
+footer p,
+footer li {
+  font-size: 13px;
+  color: #c9c9c9;
+  overflow-wrap: anywhere;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  margin-bottom: 8px;
+}
+
+footer a:hover {
+  color: var(--gold);
+}
+
+.footer-bottom {
+  border-top: 1px solid #393939;
+  padding-top: 18px;
+  text-align: center;
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+@media (max-width: 800px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar {
+    min-height: 70px;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding: 20px 5%;
+    background: #171717;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+    border-top: 1px solid #383838;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hero {
+    padding: 78px 0;
+  }
+
+  section {
+    padding: 58px 0;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-about {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    width: 90%;
+  }
+
+  .logo {
+    font-size: 17px;
+  }
+
+  .logo span {
+    font-size: 9px;
+  }
+
+  .hero h1 {
+    font-size: 39px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .services-grid,
+  .process-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-about {
+    grid-column: auto;
+  }
+
+  .service-card {
+    padding: 24px 20px;
+  }
+
+  .contact-card {
+    padding: 23px 19px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <h1 class="brand"><a href="#">My Website</a></h1>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </nav>
+
+<header>
+  <nav class="navbar container" aria-label="Main navigation">
+    <a href="#home" class="logo">
+      TRILOKPATI
+      <span>PHOTOGRAPHY</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="navLinks">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#privacy">Privacy Policy</a></li>
+      <li><a href="#terms">Terms</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="eyebrow">Professional Photography Services</div>
+
+    <h1>Every Moment Has a Story.<br>
+      <span>Let Us Capture Yours.</span>
+    </h1>
+
+    <p>
+      Welcome to Trilokpati Photography. Explore photography services
+      for weddings, pre-wedding sessions, portraits, celebrations and
+      commercial projects in Mumbai. Contact us to discuss your
+      photography requirements.
+    </p>
+
+    <a class="whatsapp-btn"
+      href="https://wa.me/917015878056?text=Hello%20Trilokpati%20Photography%2C%20I%20would%20like%20to%20enquire%20about%20your%20photography%20services."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Enquire with Trilokpati Photography on WhatsApp">
+
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 .8A15 15 0 0 0 3.1 23.5L1 31l7.7-2A15.2 15.2 0 1 0 16 .8zm0 27.4c-2.4 0-4.7-.7-6.7-2l-.5-.3-4.6 1.2 1.2-4.5-.3-.5A12.4 12.4 0 1 1 16 28.2zm6.8-9.3c-.4-.2-2.1-1-2.4-1.1-.4-.1-.6-.2-.9.2-.3.4-1 1.1-1.2 1.4-.2.2-.5.3-.9.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7-.1-.2-.9-2-1.2-2.7-.3-.7-.6-.6-.9-.6h-.7c-.3 0-.7.1-1.1.5-.4.4-1.4 1.4-1.4 3.2s1.5 3.7 1.7 4c.2.2 2.9 4.4 7 6.2 1 .4 1.8.7 2.4.8 1 .3 1.9.2 2.6.1.8-.1 2.1-.9 2.4-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.3-.8-.5z"/>
+      </svg>
+      Chat on WhatsApp
+    </a>
+
+    <p class="hero-note">
+      Contact us for service details, availability and a project-specific quote.
+    </p>
+  </div>
+</section>
+
+<!-- ABOUT US -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">About Our Business</div>
+      <h2>About Trilokpati Photography</h2>
     </div>
-  </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-inner">
-        <h2>Welcome to My Website</h2>
-        <p>A clean, full-width and mobile-responsive website template. Replace this text with your own business details.</p>
-        <a class="button" href="#contact">Contact Us</a>
+    <div class="about-content">
+      <p>
+        Trilokpati Photography is a photography service business based
+        in Andheri East, Mumbai, Maharashtra. We provide photography
+        service options for personal occasions, celebrations and
+        selected business projects.
+      </p>
+
+      <p>
+        Our service categories include wedding photography,
+        pre-wedding photography, event coverage, portrait sessions,
+        family photography and commercial photography. Each project
+        can have different requirements, schedules and deliverables.
+      </p>
+
+      <p>
+        We encourage clients to discuss their event date, preferred
+        photography style, location, expected coverage and budget
+        before confirming a booking. Service availability, pricing
+        and deliverables are communicated during the inquiry process.
+      </p>
+
+      <p>
+        Our goal is to make the inquiry process clear and convenient
+        so clients can understand the available services before making
+        a decision.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">What We Offer</div>
+      <h2>Our Photography Services</h2>
+      <p>
+        Explore our photography categories and contact us to discuss
+        your requirements and project availability.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <article class="service-card">
+        <div class="service-number">01</div>
+        <h3>Wedding Photography</h3>
+        <p>
+          Photography coverage for wedding ceremonies, special
+          moments, family gatherings and wedding celebrations.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-number">02</div>
+        <h3>Pre-Wedding Photography</h3>
+        <p>
+          Planned couple photography sessions based on the preferred
+          location, creative style and agreed schedule.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-number">03</div>
+        <h3>Event Photography</h3>
+        <p>
+          Photography for birthdays, anniversaries, private functions,
+          family occasions and other events.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-number">04</div>
+        <h3>Portrait Photography</h3>
+        <p>
+          Individual, couple and family portrait sessions for personal
+          use and other agreed photography requirements.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-number">05</div>
+        <h3>Commercial Photography</h3>
+        <p>
+          Photography inquiries for businesses, products, promotional
+          materials and other commercial projects.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-number">06</div>
+        <h3>Photography Consultation</h3>
+        <p>
+          Discuss your event details, desired style, coverage
+          requirements, estimated budget and possible arrangements.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="process">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Our Inquiry Process</div>
+      <h2>Plan Your Photography Session</h2>
+      <p>
+        Contact us with your requirements to understand the next steps.
+      </p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-card">
+        <h3>01. Share Your Requirements</h3>
+        <p>
+          Tell us which photography service you need, your preferred
+          date, location and the type of coverage you have in mind.
+        </p>
       </div>
-    </section>
 
-    <section class="section" id="services">
-      <h2>Our Services</h2>
-      <p class="section-intro">Add your services here. The layout adjusts automatically for mobile, tablet and desktop screens.</p>
-      <div class="cards">
-        <article class="card">
-          <h3>Service One</h3>
-          <p>Write a short description of your first service here.</p>
-        </article>
-        <article class="card">
-          <h3>Service Two</h3>
-          <p>Write a short description of your second service here.</p>
-        </article>
-        <article class="card">
-          <h3>Service Three</h3>
-          <p>Write a short description of your third service here.</p>
-        </article>
+      <div class="process-card">
+        <h3>02. Discuss the Details</h3>
+        <p>
+          Ask about availability, service scope, pricing, deliverables
+          and any additional requirements before confirming.
+        </p>
       </div>
-    </section>
 
-    <section class="about" id="about">
-      <div class="section">
-        <h2>About Us</h2>
-        <p class="section-intro">Add your business introduction here. Keep your content, images and links relevant to your website.</p>
+      <div class="process-card">
+        <h3>03. Confirm Your Booking</h3>
+        <p>
+          Proceed only after the agreed services, fees, schedule
+          and booking terms have been communicated and accepted.
+        </p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="section" id="contact">
-      <div class="contact-box">
-        <div>
-          <h2>Contact Us</h2>
-          <p class="section-intro">Add your phone number, email address or contact link here.</p>
+<!-- CONTACT US -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Get in Touch</div>
+      <h2>Contact Trilokpati Photography</h2>
+      <p>
+        For photography inquiries, service information and booking
+        discussions, use the contact details below.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+        <h3>Business Contact Details</h3>
+
+        <div class="contact-item">
+          <strong>Business Name</strong>
+          <p>Trilokpati Photography</p>
         </div>
-        <a class="button" href="mailto:hello@example.com">Email Us</a>
-      </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p>© <span id="year"></span> My Website. All rights reserved.</p>
-      <p><a href="#about">About Us</a> · <a href="#contact">Contact</a></p>
+        <div class="contact-item">
+          <strong>Phone / Inquiry Number</strong>
+          <a href="tel:+917015878056">+91 70158 78056</a>
+        </div>
+
+        <div class="contact-item">
+          <strong>Email Address</strong>
+          <a href="mailto:trilokpatiphotography@gmail.com">
+            trilokpatiphotography@gmail.com
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <strong>Business Address</strong>
+          <p>
+            Timmy Arcade, 778, Makwana Rd, Gamdevi,
+            Marol, Andheri East, Mumbai, Maharashtra 400059, India
+          </p>
+        </div>
+
+        <div class="contact-item">
+          <strong>Service Area</strong>
+          <p>Mumbai, Maharashtra. Please confirm availability for your location.</p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="whatsapp-btn"
+            href="https://wa.me/917015878056?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20photography%20services."
+            target="_blank"
+            rel="noopener noreferrer">
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h3>Send Your Inquiry</h3>
+
+        <p>
+          To help us understand your request, please include the
+          following information in your email or WhatsApp message.
+        </p>
+
+        <div class="contact-item">
+          <strong>Photography Service</strong>
+          <p>Wedding, pre-wedding, event, portrait or commercial photography.</p>
+        </div>
+
+        <div class="contact-item">
+          <strong>Event Date and Location</strong>
+          <p>Your preferred date, venue and required coverage area.</p>
+        </div>
+
+        <div class="contact-item">
+          <strong>Project Requirements</strong>
+          <p>Expected hours, photography style and any specific deliverables.</p>
+        </div>
+
+        <div class="contact-item">
+          <strong>Budget and Availability</strong>
+          <p>Share your approximate budget and ask about available arrangements.</p>
+        </div>
+
+        <a class="map-link"
+          href="https://www.google.com/maps/search/?api=1&query=Timmy+Arcade%2C+778%2C+Makwana+Road%2C+Marol%2C+Andheri+East%2C+Mumbai%2C+Maharashtra+400059"
+          target="_blank"
+          rel="noopener noreferrer">
+          View Address on Google Maps
+        </a>
+
+        <p style="margin-top:20px;font-size:13px;color:#666">
+          Submitting an inquiry does not automatically confirm a
+          booking. Booking confirmation is subject to availability
+          and mutually agreed terms.
+        </p>
+      </div>
+
     </div>
-  </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </div>
+</section>
+
+<!-- PRIVACY POLICY -->
+<section class="legal" id="privacy">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Website Policies</div>
+      <h2>Privacy Policy</h2>
+      <p>
+        This policy explains how information may be handled when
+        you contact Trilokpati Photography.
+      </p>
+    </div>
+
+    <div class="legal-content">
+
+      <div class="legal-block">
+        <h3>1. Information We May Receive</h3>
+        <p>
+          When you contact us by telephone, email or WhatsApp, you may
+          voluntarily share your name, contact information, event
+          details, location, preferences and other information needed
+          to respond to your inquiry.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>2. How Information Is Used</h3>
+        <p>
+          Information you provide may be used to respond to inquiries,
+          discuss photography services, communicate availability,
+          prepare quotations, coordinate agreed bookings and maintain
+          relevant business records.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>3. Sharing of Information</h3>
+        <p>
+          We do not intend to sell personal contact information.
+          Information may be shared when necessary to provide a
+          requested service, operate relevant communication services,
+          comply with applicable law or protect legitimate rights.
+          Information may also be processed by the third-party
+          platforms you choose to use.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>4. Cookies and Website Technology</h3>
+        <p>
+          This website template does not intentionally set advertising
+          cookies, use analytics scripts or embed tracking pixels.
+          External links, hosting infrastructure or future website
+          changes may involve their own technical data practices.
+          The published policy must be updated if additional tracking
+          or data collection tools are introduced.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>5. Data Security and Retention</h3>
+        <p>
+          Reasonable measures should be used to protect inquiry
+          information from unauthorized access, disclosure or misuse.
+          Information should be retained only for as long as needed
+          for its stated purpose, applicable legal obligations or
+          legitimate business requirements.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>6. Your Choices and Requests</h3>
+        <p>
+          You may contact us to ask about personal information you
+          have provided, request correction of inaccurate details or
+          request deletion where applicable law permits. Some records
+          may need to be retained to meet legal or contractual
+          requirements.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>7. Third-Party Services</h3>
+        <p>
+          WhatsApp, email providers, mapping services and other
+          external platforms operate under their own terms and
+          privacy policies. When you use their services, their
+          respective policies may apply.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>8. Contact About Privacy</h3>
+        <p>
+          For privacy-related questions, email
+          trilokpatiphotography@gmail.com or call +91 70158 78056.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>9. Policy Updates</h3>
+        <p>
+          This policy may be revised to reflect changes in business
+          operations, website functionality or legal requirements.
+          The updated version should be published on this page.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TERMS AND CONDITIONS -->
+<section class="legal" id="terms" style="background:#f7f5f0">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Please Read Carefully</div>
+      <h2>Terms &amp; Conditions</h2>
+    </div>
+
+    <div class="legal-content">
+
+      <div class="legal-block">
+        <h3>1. Website Use</h3>
+        <p>
+          This website provides general information about photography
+          services offered under the name Trilokpati Photography.
+          Visitors agree to use the website lawfully and not interfere
+          with its operation or misuse its content.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>2. Service Inquiries</h3>
+        <p>
+          Information on this website describes service categories
+          and does not guarantee that every service is available for
+          every date, venue or location. Availability must be
+          confirmed directly.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>3. Pricing and Quotations</h3>
+        <p>
+          Pricing depends on the project, duration, location, coverage,
+          deliverables and other agreed requirements. Any quotation
+          should be reviewed for its validity period, inclusions,
+          exclusions, applicable taxes and payment schedule before
+          the customer confirms a booking.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>4. Booking Confirmation</h3>
+        <p>
+          Sending an inquiry does not create a confirmed booking.
+          A booking is subject to availability and confirmation of
+          the agreed scope, price, payment terms, schedule and any
+          applicable written agreement.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>5. Changes and Cancellation</h3>
+        <p>
+          Changes to a confirmed session, postponement, cancellation,
+          deposits, refunds and rescheduling should be governed by
+          the terms communicated and accepted for that particular
+          booking, subject to applicable law.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>6. Photographs and Deliverables</h3>
+        <p>
+          The final number of photographs, editing style, delivery
+          format, delivery timeline, album arrangements and other
+          deliverables depend on the confirmed project agreement.
+          Clients should clarify these details before booking.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>7. Intellectual Property</h3>
+        <p>
+          Website text, design and other original materials may be
+          protected by applicable intellectual property laws.
+          Ownership, permitted usage, reproduction and licensing of
+          photographs created for a client should be addressed in
+          the relevant booking agreement.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>8. External Links</h3>
+        <p>
+          Links to WhatsApp, Google Maps, email services and other
+          third-party platforms are provided for convenience.
+          Trilokpati Photography does not control the availability
+          or policies of external websites.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>9. Limitation and Applicable Law</h3>
+        <p>
+          Nothing in these terms excludes any consumer rights or
+          legal protections that cannot lawfully be excluded.
+          Any limitation of liability must be interpreted subject
+          to applicable law in India. Disputes are subject to
+          applicable Indian law and the jurisdiction of competent
+          courts, as legally appropriate.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>10. Contact</h3>
+        <p>
+          For questions about these terms, contact
+          trilokpatiphotography@gmail.com or +91 70158 78056.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DISCLAIMER -->
+<section class="legal" id="disclaimer">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Important Information</div>
+      <h2>Disclaimer</h2>
+    </div>
+
+    <div class="legal-content">
+
+      <div class="legal-block">
+        <h3>General Information</h3>
+        <p>
+          The information on this website is provided for general
+          informational purposes regarding photography services.
+          Service descriptions do not guarantee availability,
+          specific outcomes or suitability for every project.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Pricing and Availability</h3>
+        <p>
+          Prices, packages, schedules, locations and deliverables
+          must be confirmed directly before a booking. Any estimate
+          is subject to the specific terms communicated for the
+          relevant project.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Third-Party Platforms</h3>
+        <p>
+          WhatsApp and Google Maps are third-party services.
+          Their availability, functionality, content and policies
+          are controlled by their respective providers.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Photography Results</h3>
+        <p>
+          Photography results can vary depending on lighting, venue
+          conditions, weather, event schedules, subject cooperation
+          and other circumstances. Specific results should not be
+          assumed unless expressly agreed in writing.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Accuracy of Information</h3>
+        <p>
+          We aim to keep website information accurate and up to date.
+          Please contact us to verify service details before relying
+          on any information to make a booking decision.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-about">
+        <div class="footer-brand">TRILOKPATI PHOTOGRAPHY</div>
+        <p style="margin-top:12px">
+          Photography services for weddings, pre-wedding sessions,
+          events, portraits and commercial projects.
+        </p>
+        <p style="margin-top:12px">
+          Timmy Arcade, 778, Makwana Rd, Gamdevi, Marol,
+          Andheri East, Mumbai, Maharashtra 400059.
+        </p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Legal Information</h3>
+        <ul>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms &amp; Conditions</a></li>
+          <li><a href="#disclaimer">Disclaimer</a></li>
+        </ul>
+
+        <h3 style="margin-top:20px">Contact</h3>
+        <ul>
+          <li><a href="tel:+917015878056">+91 70158 78056</a></li>
+          <li>
+            <a href="mailto:trilokpatiphotography@gmail.com">
+              Email Us
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        &copy; <span id="currentYear">2026</span>
+        Trilokpati Photography. All rights reserved.
+      </p>
+      <p style="margin-top:5px">
+        Photography services in Mumbai, Maharashtra, India.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  const menuButton = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  menuButton.addEventListener("click", function () {
+    const isOpen = navLinks.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.setAttribute(
+      "aria-label",
+      isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
+    menuButton.textContent = isOpen ? "✕" : "☰";
+  });
+
+  navLinks.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      navLinks.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Open navigation menu");
+      menuButton.textContent = "☰";
+    });
+  });
+
+  document.getElementById("currentYear").textContent =
+    new Date().getFullYear();
+})();
+</script>
+
 </body>
 </html>
